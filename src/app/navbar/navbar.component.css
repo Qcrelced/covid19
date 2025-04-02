@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    max-width: 1100px;
+    padding: 24px 64px;
+    font-size: larger;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

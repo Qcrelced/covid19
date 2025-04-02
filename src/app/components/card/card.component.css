@@ -1,0 +1,27 @@
+.card{
+    display: flex;
+    padding: 12px;
+    background-color: white;
+    border-radius: 6px;
+    gap: 12px;
+    min-width: 500px;
+    align-items: center;
+    text-align: left;
+    max-width: 400px;
+}
+
+h3{
+    color: blueviolet;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+}
+
+.card img{
+    width: 80px;
+    height: auto;
+}
