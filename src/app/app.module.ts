@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
 import { CardContactComponent } from './components/card-contact/card-contact.component';
+import { TextButtonComponent } from './components/text-button/text-button.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CardContactComponent } from './components/card-contact/card-contact.com
     NavbarComponent,
     FooterComponent,
     CardComponent,
-    CardContactComponent
+    CardContactComponent,
+    TextButtonComponent
   ],
   imports: [
     BrowserModule,

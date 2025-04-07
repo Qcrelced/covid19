@@ -7,7 +7,11 @@ import { Component, Input} from '@angular/core';
   styleUrl: './card-contact.component.css'
 })
 export class CardContactComponent {
-  @Input() title: String =  '';
-  @Input() content: String = '';
-  @Input() imagesrc: String = '';
+  @Input() title: String = '';
+  @Input() address: String = '';
+  @Input() customClass: string = '';
+  @Input() buttonLabel: string = '';
+  @Input() buttonUrl: String = '';
+  @Input() buttonLabelStroked: string = '';
+  @Input() buttonUrlStroked: String = '';
 }

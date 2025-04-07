@@ -30,3 +30,20 @@
 .section-title > h2{
     color: blueviolet;
 }
+
+.card-grid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.card{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    background-color: white;
+    border-radius: 16px;
+    padding: 32px;
+    gap: 32px;
+}

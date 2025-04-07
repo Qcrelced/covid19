@@ -1,0 +1,31 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.a-button{
+    display: flex;
+    padding: 16px 32px;
+    border-radius: 64px;
+    width: fit-content;
+    background-color: blueviolet;
+    color: white;
+    transition: 0.4s;
+}
+
+.a-button-stroked{
+    padding: 14px 30px;
+    background-color: transparent;
+    border: 2px solid blueviolet;
+    color: blueviolet;
+}
+
+.a-button-stroked:hover{
+    border: 2px solid rgba(137, 43, 226, 0.8);
+    background-color: rgba(137, 43, 226, 0.8);
+    color: white;
+}
+
+.a-button:hover{
+    background-color: rgba(137, 43, 226, 0.8);
+}
