@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="section">
+        <div class="section-title">
+            <h2>Ajouter un message</h2>
+        <div class="section-title">
+        <form (ngSubmit)="addMessage()"  class="message-form">
+            <div class="form-group-tag">
+                <label>Tag :</label>
+                <select [(ngModel)]="selectedTag" name="tag" required>
+                    <option *ngFor="let tag of tags" [value]="tag">{{ tag }}</option>
+                </select>
+                <button type="submit">Envoyer</button>    
+            </div>
+            <div>
+                <label>Message :</label>
+                <input [(ngModel)]="content" name="message" required/>
+            </div>
+        </form>
+    
+        <div class="section-title messages">
+            <div class="filter">
+                <h2>Filtrer les messages par tag :</h2>
+                <select [(ngModel)]="filteredTag" name="filterTagSelect">
+                    <option value="">-- Tous --</option>
+                    <option *ngFor="let tag of tags" [value]="tag">{{ tag }}</option>
+                </select>
+            </div>
+            <div>
+                <p *ngFor="let msg of filteredMessages"><span class="tag-message">{{msg.tag}} : </span> {{msg.content }}</p>
+            </div>
+        </div>
+    </div>
+</div>
